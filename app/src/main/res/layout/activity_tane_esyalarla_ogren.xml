@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tane_esyalarla_ogren"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/background"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cengiz.cengo.Sayilar">
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/kasik"
+        android:onClick="esya"
+        android:layout_marginLeft="61dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="45dp"
+        android:id="@+id/esyalarla_ogren_kasik"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Kaşık"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="esya"
+        android:layout_marginTop="17dp"
+        android:id="@+id/textViewKasik"
+        android:layout_below="@+id/esyalarla_ogren_kasik"
+        android:layout_alignRight="@+id/esyalarla_ogren_kasik"
+        android:layout_alignEnd="@+id/esyalarla_ogren_kasik"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/catal"
+        android:onClick="esya"
+        android:id="@+id/esyalarla_ogren_catal"
+        android:layout_alignTop="@+id/esyalarla_ogren_kasik"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="69dp"
+        android:layout_marginEnd="69dp" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/bardak"
+        android:onClick="esya"
+        android:layout_marginTop="29dp"
+        android:id="@+id/esyalarla_ogren_bardak"
+        android:layout_below="@+id/textViewKasik"
+        android:layout_alignLeft="@+id/esyalarla_ogren_kasik"
+        android:layout_alignStart="@+id/esyalarla_ogren_kasik"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:text="Bardak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="esya"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textViewBardak"
+        android:layout_below="@+id/esyalarla_ogren_bardak"
+        android:layout_alignRight="@+id/esyalarla_ogren_kasik"
+        android:layout_alignEnd="@+id/esyalarla_ogren_kasik" />
+
+    <TextView
+        android:text="Sandalye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="esya"
+        android:id="@+id/textViewSandalye"
+        android:layout_below="@+id/esyalarla_ogren_sandalye"
+        android:layout_alignRight="@+id/esyalarla_ogren_sandalye"
+        android:layout_alignEnd="@+id/esyalarla_ogren_sandalye" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/sandalye"
+        android:onClick="esya"
+        android:layout_marginTop="34dp"
+        android:id="@+id/esyalarla_ogren_sandalye"
+        android:layout_below="@+id/textViewBardak"
+        android:layout_toRightOf="@+id/textViewBardak"
+        android:layout_toEndOf="@+id/textViewBardak" />
+
+    <TextView
+        android:text="Çatal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="esya"
+        android:id="@+id/textViewCatal"
+        android:layout_above="@+id/esyalarla_ogren_bardak"
+        android:layout_alignRight="@+id/esyalarla_ogren_catal"
+        android:layout_alignEnd="@+id/esyalarla_ogren_catal"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/tabak"
+        android:onClick="esya"
+        android:id="@+id/esyalarla_ogren_tabak"
+        android:layout_alignTop="@+id/esyalarla_ogren_bardak"
+        android:layout_alignLeft="@+id/esyalarla_ogren_catal"
+        android:layout_alignStart="@+id/esyalarla_ogren_catal" />
+
+    <TextView
+        android:text="Tabak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="esya"
+        android:id="@+id/textViewTabak"
+        android:layout_above="@+id/esyalarla_ogren_sandalye"
+        android:layout_alignRight="@+id/textViewCatal"
+        android:layout_alignEnd="@+id/textViewCatal" />
+
+</RelativeLayout>
+

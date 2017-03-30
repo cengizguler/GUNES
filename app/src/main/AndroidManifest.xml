@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cengiz.cengo"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/gunees"
+        android:label="GÜNEŞ UYGULAMASI"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:screenOrientation="portrait"
+
+        android:theme="@style/AppTheme">
+        <activity android:name=".first"
+                android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Esyalar"  android:screenOrientation="portrait"/>
+        <activity android:name=".Renkler"  android:screenOrientation="portrait"/>
+        <activity android:name=".EsyaOyun"  android:screenOrientation="portrait"/>
+        <activity android:name=".MeyveOyun"  android:screenOrientation="portrait" />
+        <activity android:name=".taneoyun2"  android:screenOrientation="portrait"/>
+        <activity android:name=".MeyveTamami"  android:screenOrientation="portrait" />
+        <activity android:name=".Sayilar"  android:screenOrientation="portrait"/>
+        <activity android:name=".Hakkimizda"  android:screenOrientation="portrait"/>
+        <activity android:name=".Meyveler"  android:screenOrientation="portrait"/>
+        <activity android:name=".SayiEsleme" android:screenOrientation="portrait" />
+        <activity android:name=".tumSayilar"  android:screenOrientation="portrait"/>
+        <activity android:name=".tane_ekran"  android:screenOrientation="portrait"/>
+        <activity android:name=".sayiOgretme"  android:screenOrientation="portrait"/>
+        <activity android:name=".EsyalarOgretme"  android:screenOrientation="portrait"/>
+        <activity android:name=".MeyvelerOgretme"  android:screenOrientation="portrait"/>
+        <activity android:name=".MeyveEsleme" android:screenOrientation="portrait" />
+        <activity android:name=".tane_esya" android:screenOrientation="portrait" />
+        <activity android:name=".tane_esyalarla_ogren" android:screenOrientation="portrait" />
+        <activity android:name=".tane_meyve"  android:screenOrientation="portrait"/>
+        <activity android:name=".tane_meyvelerle_ogren" android:screenOrientation="portrait" />
+        <activity android:name=".tane_oyun1"  android:screenOrientation="portrait"/>
+        <activity android:name=".TaneOyun3"  android:screenOrientation="portrait"/>
+        <activity android:name=".tane_ogren" android:screenOrientation="portrait" />
+        <activity android:name=".eslesayi"  android:screenOrientation="portrait"/>
+        <activity android:name=".EsyaTamami" android:screenOrientation="portrait" />
+        <activity android:name=".RenkTamami" android:screenOrientation="portrait" />
+        <activity android:name=".sayiOyunu"  android:screenOrientation="portrait"/>
+        <activity android:name=".RenkOgretme" android:screenOrientation="portrait" />
+        <activity android:name=".RenkOyun"  android:screenOrientation="portrait"/>
+        <activity android:name=".eslesayi2"  android:screenOrientation="portrait"/>
+        <activity android:name=".eslesayi10" android:screenOrientation="portrait" />
+        <activity android:name=".eslesayi3" android:screenOrientation="portrait" />
+        <activity android:name=".eslesayi4" android:screenOrientation="portrait" />
+        <activity android:name=".eslesayi5" android:screenOrientation="portrait" />
+        <activity android:name=".eslesayi6" android:screenOrientation="portrait" />
+        <activity android:name=".eslesayi7" android:screenOrientation="portrait" />
+        <activity android:name=".eslesayi8"  android:screenOrientation="portrait"/>
+        <activity android:name=".eslesayi9" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

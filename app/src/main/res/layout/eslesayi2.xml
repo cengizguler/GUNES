@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context="com.example.cengiz.cengo.eslesayi"
+
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EŞLEŞTİR!"
+        android:textSize="30sp"
+        android:layout_gravity="right"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/eslestir" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Total"
+        android:textSize="20sp"
+        android:layout_marginTop="83dp"
+        android:layout_below="@+id/eslestir"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Success"
+        android:textSize="30sp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/eslestir"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="DEVAM"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/devam"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:visibility="visible"
+        android:onClick="sonraki_sayfa"
+        android:fontFamily="casual"
+        android:layout_alignBottom="@+id/Success"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent" />
+
+
+    <RelativeLayout
+        android:id="@+id/bottomlinear"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:background="@android:color/transparent"
+        android:layout_height="600dp"
+        android:layout_width="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/dort"
+            android:gravity="bottom|center_horizontal"
+
+            android:id="@+id/imageView1"
+            android:layout_gravity="bottom"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/iki"
+            android:id="@+id/ikki"
+            android:layout_gravity="right"
+            android:layout_width="50dp"
+
+            android:layout_marginTop="196dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/iki"
+        android:gravity="center"
+        android:id="@+id/imageView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="ANA SAYFA"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/devam"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/button"
+        android:textSize="14sp"
+        android:fontFamily="casual"
+        android:onClick="onceki_sayfa"
+        android:background="@android:color/holo_green_light"
+        android:textStyle="normal|bold" />
+    <ImageView
+        android:layout_width="900dp"
+        android:layout_height="900dp"
+        android:id="@+id/happy"
+        android:layout_gravity="center"
+        android:layout_alignTop="@+id/Total"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_other3"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context="com.example.cengiz.cengo.Sayilar"
+    android:orientation="vertical"
+    android:weightSum="1"
+
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:id="@+id/ZEROLayout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TANE KAVRAMI"
+            android:textSize="36sp"
+            android:lineSpacingExtra="8sp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:fontFamily="casual"
+            android:textStyle="normal|bold|italic" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/ZEROLayout"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:text="ÖĞRENME"
+            android:id="@+id/taneogrenme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:background="@android:color/holo_orange_light"
+            android:textSize="24sp"
+            android:fontFamily="serif-monospace" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <Button
+            android:text="OYUN 1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:id="@+id/taneoyun1"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/btnOyna"
+            android:layout_alignEnd="@+id/btnOyna"
+            android:background="@android:color/holo_blue_bright"
+            android:fontFamily="serif-monospace"
+            android:textSize="24sp"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/secondLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <Button
+            android:text="OYUN 2"
+            android:id="@+id/taneoyun2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+
+            android:textStyle="bold"
+            android:background="@android:color/holo_red_light"
+            android:textSize="24sp"
+            android:fontFamily="serif-monospace" />
+
+        <Button
+            android:text="OYUN 3"
+            android:id="@+id/taneoyun3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:background="@android:color/holo_green_light"
+            android:fontFamily="serif-monospace"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/gunees"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/firstLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+
+</RelativeLayout>

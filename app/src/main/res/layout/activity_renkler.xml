@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_renkler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cengiz.cengo.Renkler">
+
+
+    <TextView android:id="@+id/renk_hosgeldiniz"
+        android:text="RENKLER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColorLink="@color/colorAccent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="casual"
+        android:textSize="36sp"
+        android:textStyle="normal|bold|italic"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button android:id="@+id/renk_testet"
+        android:text="Oyna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:onClick="renkoyna"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/renk_ogren"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:fontFamily="serif-monospace" />
+
+    <Button
+        android:text=" Tüm Renkler "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tumRenkler"
+        android:layout_marginTop="29dp"
+        android:background="@android:color/holo_blue_bright"
+        android:fontFamily="serif-monospace"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/renk_testet"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/gunees"
+        android:id="@+id/imageView7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/renk_testet"
+        android:layout_alignEnd="@+id/renk_testet"
+        android:layout_marginBottom="34dp" />
+
+    <Button android:id="@+id/renk_ogren"
+        android:text="Öğren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="renkogren"
+        android:layout_marginTop="17dp"
+        android:background="@color/colorAccent"
+        android:textSize="24sp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/renk_hosgeldiniz"
+        android:layout_alignLeft="@+id/renk_testet"
+        android:layout_alignStart="@+id/renk_testet" />
+
+</RelativeLayout>

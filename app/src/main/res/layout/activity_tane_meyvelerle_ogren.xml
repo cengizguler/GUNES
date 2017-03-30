@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_meyveler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cengiz.cengo.Sayilar"
+    >
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/armut"
+        android:onClick="meyve"
+        android:layout_marginLeft="71dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="19dp"
+        android:id="@+id/meyvelerle_ogren_armut"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Armut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="meyve"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textViewArmut"
+        android:layout_below="@+id/meyvelerle_ogren_armut"
+        android:layout_alignRight="@+id/meyvelerle_ogren_armut"
+        android:layout_alignEnd="@+id/meyvelerle_ogren_armut" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/seftali"
+        android:onClick="meyve"
+        android:id="@+id/meyvelerle_ogren_şeftali"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/textViewArmut"
+        android:layout_alignRight="@+id/textViewArmut"
+        android:layout_alignEnd="@+id/textViewArmut" />
+
+    <TextView
+        android:text="Şeftali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="meyve"
+        android:id="@+id/textViewSeftali"
+        android:layout_below="@+id/meyvelerle_ogren_şeftali"
+        android:layout_alignLeft="@+id/textViewArmut"
+        android:layout_alignStart="@+id/textViewArmut" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/cilek"
+        android:onClick="meyve"
+        android:layout_below="@+id/textViewSeftali"
+        android:layout_alignRight="@+id/textViewSeftali"
+        android:layout_alignEnd="@+id/textViewSeftali"
+        android:layout_marginTop="15dp"
+        android:id="@+id/meyvelerle_ogren_çilek" />
+
+    <TextView
+        android:text="Nar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="meyve"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textViewNar"
+        android:layout_below="@+id/meyvelerle_ogren_nar"
+        android:layout_alignRight="@+id/meyvelerle_ogren_şeftali"
+        android:layout_alignEnd="@+id/meyvelerle_ogren_şeftali"
+        android:layout_alignLeft="@+id/textViewSeftali"
+        android:layout_alignStart="@+id/textViewSeftali" />
+
+    <TextView
+        android:text=" Elma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="meyve"
+        android:layout_below="@+id/meyvelerle_ogren_elma"
+        android:layout_alignLeft="@+id/meyvelerle_ogren_elma"
+        android:layout_alignStart="@+id/meyvelerle_ogren_elma"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textViewElma"
+        android:layout_alignRight="@+id/meyvelerle_ogren_elma"
+        android:layout_alignEnd="@+id/meyvelerle_ogren_elma" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/elma"
+        android:onClick="meyve"
+        android:layout_marginTop="15dp"
+        android:id="@+id/meyvelerle_ogren_elma"
+        android:layout_below="@+id/textViewNar"
+        android:layout_alignLeft="@+id/meyvelerle_ogren_nar"
+        android:layout_alignStart="@+id/meyvelerle_ogren_nar" />
+
+    <TextView
+        android:text="Muz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="meyve"
+        android:id="@+id/textViewMuz"
+        android:layout_alignBaseline="@+id/textViewArmut"
+        android:layout_alignBottom="@+id/textViewArmut"
+        android:layout_alignLeft="@+id/meyvelerle_ogren_muz"
+        android:layout_alignStart="@+id/meyvelerle_ogren_muz"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <TextView
+        android:text=" Karpuz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="meyve"
+        android:layout_alignLeft="@+id/meyvelerle_ogren_karpuz"
+        android:layout_alignStart="@+id/meyvelerle_ogren_karpuz"
+        android:id="@+id/textViewKarpuz"
+        android:layout_below="@+id/meyvelerle_ogren_karpuz" />
+
+    <TextView
+        android:text="Portakal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="meyve"
+        android:layout_above="@+id/meyvelerle_ogren_elma"
+        android:layout_alignRight="@+id/meyvelerle_ogren_portakal"
+        android:layout_alignEnd="@+id/meyvelerle_ogren_portakal"
+        android:id="@+id/textViewPortakal" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/nar"
+        android:onClick="meyve"
+        android:layout_marginTop="16dp"
+        android:id="@+id/meyvelerle_ogren_nar"
+        android:layout_below="@+id/textViewKarpuz"
+        android:layout_alignRight="@+id/textViewNar"
+        android:layout_alignEnd="@+id/textViewNar" />
+
+    <TextView
+        android:text="Kayısı"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="meyve"
+        android:id="@+id/textViewKayısı"
+        android:layout_alignRight="@+id/meyvelerle_ogren_muz"
+        android:layout_alignEnd="@+id/meyvelerle_ogren_muz"
+        android:layout_above="@+id/meyvelerle_ogren_çilek"
+        android:layout_below="@+id/meyvelerle_ogren_Kayısı"
+        android:layout_alignLeft="@+id/textViewMuz"
+        android:layout_alignStart="@+id/textViewMuz" />
+
+    <TextView
+        android:text="Erik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="meyve"
+        android:id="@+id/textViewErik"
+        android:layout_alignTop="@+id/textViewElma"
+        android:layout_alignRight="@+id/textViewMuz"
+        android:layout_alignEnd="@+id/textViewMuz" />
+
+    <TextView
+        android:text="Çilek"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="meyve"
+        android:id="@+id/textViewCilek"
+        android:layout_below="@+id/meyvelerle_ogren_çilek"
+        android:layout_alignLeft="@+id/textViewNar"
+        android:layout_alignStart="@+id/textViewNar" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/muz"
+        android:onClick="meyve"
+        android:id="@+id/meyvelerle_ogren_muz"
+        android:layout_marginRight="81dp"
+        android:layout_marginEnd="81dp"
+        android:layout_alignTop="@+id/meyvelerle_ogren_armut"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/karpuz"
+        android:onClick="meyve"
+        android:id="@+id/meyvelerle_ogren_karpuz"
+        android:layout_above="@+id/textViewCilek"
+        android:layout_alignRight="@+id/textViewKayısı"
+        android:layout_alignEnd="@+id/textViewKayısı" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/kayisi"
+        android:onClick="meyve"
+        android:id="@+id/meyvelerle_ogren_Kayısı"
+        android:layout_above="@+id/textViewSeftali"
+        android:layout_alignRight="@+id/textViewKayısı"
+        android:layout_alignEnd="@+id/textViewKayısı" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/erik"
+        android:onClick="meyve"
+        android:id="@+id/meyvelerle_ogren_erik"
+        android:layout_alignTop="@+id/meyvelerle_ogren_elma"
+        android:layout_alignRight="@+id/textViewPortakal"
+        android:layout_alignEnd="@+id/textViewPortakal" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/portakal"
+        android:onClick="meyve"
+        android:id="@+id/meyvelerle_ogren_portakal"
+        android:layout_alignTop="@+id/meyvelerle_ogren_nar"
+        android:layout_alignLeft="@+id/textViewKarpuz"
+        android:layout_alignStart="@+id/textViewKarpuz" />
+
+
+</RelativeLayout>
